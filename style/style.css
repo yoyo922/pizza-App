@@ -86,3 +86,13 @@ p {
 .card .card-body .card-buttons .plus:hover {
   background-color: grey;
 }
+
+.specialButton {
+  color: white;
+  background-color:#ff9933;
+  display: block;
+  margin: 10px;
+}
+.specialButton.selected {
+  background-color:#ff6600 ;
+}

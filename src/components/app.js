@@ -28,9 +28,9 @@ export default class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-2">
-              <button className="selection-button btn btn-primary" onClick={() => this.handleClick(1)} type="button">Size</button>
+              <button className="selection-button btn btn-primary" id="sizeButton" onClick={() => this.handleClick(1)} type="button">Size</button>
               <button className="selection-button btn btn-primary" onClick={() => this.handleClick(2)} type="button">Toppings</button>
-              <button className="selection-button btn btn-primary" onClick={() => this.handleClick(3)} type="button">Pops</button>
+              <button className="selection-button btn btn-primary" id="popButton" onClick={() => this.handleClick(3)} type="button">Pops</button>
             </div>
             <div className="col-lg-6">
               <Menu menuItem={userSelect}/>
