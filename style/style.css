@@ -1,0 +1,94 @@
+h5 {
+  margin: 8px;
+}
+
+p {
+  margin: 8px;
+}
+
+.pizza-title{
+  text-align: center;
+}
+
+.pizza-app{
+  margin-bottom: 200px;
+}
+.selection-button {
+  width: 100%;
+}
+
+.pizza-app .selection-button {
+  display:block;
+  margin: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.pizza-container {
+  display: flex;
+  width: 100%;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pizza-container .pizza-toppings {
+  position: absolute;
+}
+
+.card {
+  width: 48%;
+  margin: 2px;
+}
+
+.card.selected {
+  border: 3px #61B329 solid;
+  background-color: whitesmoke;
+}
+
+
+.card .card-body .card-img-top {
+  height: 225px;
+}
+.card .card-body img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.card .card-body .card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card .card-body .card-buttons .minus {
+  flex-grow: 1;
+  text-align: center;
+  text-size: 10px;
+}
+
+.card .card-body .card-buttons .minus:hover {
+  background-color: grey;
+}
+
+.card .card-body .card-buttons .plus {
+  flex-grow: 1;
+  text-align: center;
+  text-size: 10px;
+}
+
+.card .card-body .card-buttons .plus:hover {
+  background-color: grey;
+}
+
+.specialButton {
+  display: inline-block;
+}
