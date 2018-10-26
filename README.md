@@ -3,7 +3,7 @@ Pizza app
 Peter Zhou
 ------------
 
-HOW TO run
+How to run
 ---------------
 
 -download repo
