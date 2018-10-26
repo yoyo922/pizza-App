@@ -18,7 +18,6 @@ export default class App extends Component {
 
   render() {
     const { userSelect } = this.state
-
     return(
       <div className="pizza-app">
         <div className="pizza-title">
@@ -42,7 +41,6 @@ export default class App extends Component {
           </div>
         </div>
       </div>
-
     )
   }
 }

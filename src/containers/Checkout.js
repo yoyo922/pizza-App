@@ -41,7 +41,6 @@ class Checkout extends Component{
 
   handleSpecialClick(){
     const { addPopSelectionProp,addSizeSelectionProp,specialPopSelectionProp,popSelections={} } = this.props
-    console.log(pizzaSizeList[2])
     addSizeSelectionProp(pizzaSizeList[2])
     this.setState(state =>({
       deal: !state.deal
@@ -58,9 +57,8 @@ class Checkout extends Component{
     const { popSelections, toppingSelections, sizeSelections } = this.props
 
     var deal = false
-    // Checks if today is the same as the first saturday of the month + 1 week (2nd saturday of the week)
-    if(moment().isSame(moment().startOf('month').day('saturday').add(1, 'week')) === false) {
-      deal = false
+    if(moment().isSame(moment().startOf('month').day('saturday').add(1, 'week')) === true) {
+      deal = true
     }
 
     return(

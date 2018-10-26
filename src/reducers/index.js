@@ -11,11 +11,11 @@ export default function(state = initialState, action){
         sizes: action.payload
       })
     case ADD_TOPPING_SELECTION:
-      const topping = action.payload
+      const newTopping = action.payload
       return Object.assign({}, state, {
         toppings: [
           ...state.toppings,
-          topping
+          newTopping
         ]
       })
     case REMOVE_TOPPING_SELECTION:
@@ -42,7 +42,6 @@ export default function(state = initialState, action){
           [minusId]: {
             ...action.payload,
             quantity: state.pops[minusId] && state.pops[minusId].quantity !== undefined && state.pops[minusId].quantity > 0 ? state.pops[minusId].quantity - 1 : 0
-            //if state.pops[id] and state.pops[id].quantity then quantity++ else return 0
           }
         }
       })
@@ -53,7 +52,6 @@ export default function(state = initialState, action){
             [1]: {
               ...action.payload,
               quantity: 1
-              //if state.pops[id] and state.pops[id].quantity then quantity++ else return 0
             }
           }
         })

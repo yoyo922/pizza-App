@@ -13,11 +13,9 @@ p {
 .pizza-app{
   margin-bottom: 200px;
 }
-.selection-button {
-  width: 100%;
-}
 
 .pizza-app .selection-button {
+  width: 100%;
   display:block;
   margin: 5px;
 }
@@ -87,8 +85,4 @@ p {
 
 .card .card-body .card-buttons .plus:hover {
   background-color: grey;
-}
-
-.specialButton {
-  display: inline-block;
 }

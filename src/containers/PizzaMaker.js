@@ -10,7 +10,7 @@ class PizzaMaker extends Component{
     return (
       <div className="pizza-container">
         {size &&
-          <img className="pizza-base" src={size.picture} width={`${size.size}%`} height={`${size.size}%`} />
+          <img src={size.picture} width={`${size.size}%`} height={`${size.size}%`} />
         }
         {toppings.map(topping => (
           <img className="pizza-toppings" src={topping.picture} width={`${size.size ? size.size : 100}%`} height={`${size.size ? size.size : 100}%`}/>
